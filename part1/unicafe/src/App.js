@@ -30,6 +30,9 @@ const Rate = ({good, neutral, bad}) => {
       good {good}<br/>
       neutal {neutral}<br/>
       bad {bad}<br/>
+      all {bad + neutral + good}<br/>
+      average {(good - bad)/(good + neutral + bad)}<br/>
+      postive {(good/(good + neutral + bad) * 100).toFixed(13)} %<br/>
     </div>
   )
 }
