@@ -25,6 +25,11 @@ const Statistic = () => {
 }
 
 const Rate = ({good, neutral, bad}) => {
+  if (good === 0 && neutral === 0 && bad ===0) {
+    return(
+      <div>No feedback given</div>
+    )
+  }
   return(
     <div>
       good {good}<br/>
@@ -32,7 +37,7 @@ const Rate = ({good, neutral, bad}) => {
       bad {bad}<br/>
       all {bad + neutral + good}<br/>
       average {(good - bad)/(good + neutral + bad)}<br/>
-      postive {(good/(good + neutral + bad) * 100).toFixed(13)} %<br/>
+      postive {(good/(good + neutral + bad) * 100)} %<br/>
     </div>
   )
 }
