@@ -1,3 +1,24 @@
+const Header = () =>{
+  return (
+    <div>
+    </div>  
+  )
+}
+
+const Content = () =>{
+  return (
+    <div>
+    </div>  
+  )
+}
+
+const Total = () =>{
+  return (
+    <div>
+    </div>  
+  )
+}
+
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
